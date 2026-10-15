@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡片</title>
+    <style>
+        #body{
+            background-color: rgb(236, 230, 230);
+            width: 40%; 
+            height:700px;
+            margin: auto; 
+            text-align: center; 
+            border-radius: 10px;
+            /* 立体感不就来了吗 看着就高级*/
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            /* flex弹性布局开启 */
+            display:flex;
+            flex-direction: column;
+            gap: 100px; 
+            justify-content: flex-start;
+            align-items: center;
+            
+        }
+        #title{
+            margin-top: 200px;
+        }
+        a{
+            color: #000;
+            font-size: 50px;
+            font-family: "宋体";
+            text-decoration: none;
+        }
+        floor{
+            display: flex;
+            gap: 30px;
+            margin-top: 150px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            color:white;
+            border: 2px solid #000;
+        }
+        #but_yes{
+            background-color: darkgreen;
+        }
+        #but_no{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="body">
+        <div id="title">
+            <a href="#">卡片展示</a>
+        </div>
+        <floor>
+            <button id="but_yes">确认</button>
+            <button id="but_no">不确认</button>
+        </floor>
+    </div>
+</body>
+</html>
