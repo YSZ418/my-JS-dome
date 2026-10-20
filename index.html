@@ -169,31 +169,31 @@
 <body>
     <div class="sidebor">
         <div class="sidebor-top">
-            <span class="sidebor-top-title">myNote</span>
-            <button class="create-bnt">+NEW</button>
+            <span class="sidebor-top-title">我的记事本</span>
+            <button class="create-bnt">+新建</button>
         </div>
         <div class="find">
             <input class="find-input" type="text" placeholder="请输入要搜索的标题">
-            <button class="OK">OK</button>
+            <button class="OK">确定</button>
         </div>
         <div class="list">
 
         </div>
     </div>
     <div class="editor-empty" style="display: flex;" >
-        <p>Pleace Onclick "+NEW" To ......</p>
+        <p>请点击右侧+新建，创建你的记事本吧</p>
     </div>
     <div class="editor" style="display: none;">
         <div class="editor-top">
             <div class="top-title">
-                <input class="title-input" type="text" placeholder="Pleace Input Your Title......">
+                <input class="title-input" type="text" placeholder="请输入你的标题......">
             </div>
             <div class="top-bnt">
-                <button class="delete-bnt">Delete</button>
-                <button class="save-bnt">Save</button>
+                <button class="delete-bnt">删除</button>
+                <button class="save-bnt">保存</button>
             </div>
         </div>
-        <textarea class="textarea" placeholder="What do you want to write......"></textarea>
+        <textarea class="textarea" placeholder="也许你可以记录些什么......"></textarea>
     </div>
     <script>
         let notes = JSON.parse(localStorage.getItem('notes')||'[]');
@@ -266,7 +266,6 @@
             note.title = document.getElementsByClassName('title-input')[0].value;
             note.content = document.getElementsByClassName('textarea')[0].value;
             saveNotes();
-            nowId = null;
             renderNoteList();
             renderNoteEditor();
         }
